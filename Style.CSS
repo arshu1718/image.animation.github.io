@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-img {
+  width: 150px;
+  position: relative;
+  animation: moveLeftRight 3s infinite alternate ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 80%;
+  }
+}
